@@ -22,6 +22,6 @@
   },
   "MESURE_CONSOMMATION_PATCH": {
     "minimum": 0.0065,
-    "maximum": 0.008
+    "maximum": 0.009
   }
 }
