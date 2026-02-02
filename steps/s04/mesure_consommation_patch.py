@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import time, sys, os
+import sys, os
 if __name__ == "__main__":
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
     if BASE_DIR not in sys.path:
         sys.path.insert(0, BASE_DIR)
 import configuration  # Custom
-from modules.capsys_mysql_command.capsys_mysql_command import (GenericDatabaseManager, DatabaseConfig) # Custom
 
 def get_info():
     return "Cette étape mesure la consommation du patch."
@@ -49,6 +48,7 @@ def run_step(log, config: configuration.AppConfig):
 
 if __name__ == "__main__":
     """Allow to run this script directly for testing purposes."""
+    from modules.capsys_mysql_command.capsys_mysql_command import (GenericDatabaseManager, DatabaseConfig) # Custom
 
     def log_message(message, color):
         print(f"{color}: {message}")

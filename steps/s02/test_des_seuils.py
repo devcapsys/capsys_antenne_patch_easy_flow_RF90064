@@ -6,7 +6,6 @@ if __name__ == "__main__":
     if BASE_DIR not in sys.path:
         sys.path.insert(0, BASE_DIR)
 import configuration  # Custom
-from modules.capsys_mysql_command.capsys_mysql_command import (GenericDatabaseManager, DatabaseConfig) # Custom
 
 def get_info():
     return "Cette étape teste les seuils de fonctionnement du radar."
@@ -64,6 +63,7 @@ def run_step(log, config: configuration.AppConfig):
 
 if __name__ == "__main__":
     """Allow to run this script directly for testing purposes."""
+    from modules.capsys_mysql_command.capsys_mysql_command import (GenericDatabaseManager, DatabaseConfig) # Custom
 
     def log_message(message, color):
         print(f"{color}: {message}")
