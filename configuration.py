@@ -11,7 +11,7 @@ from modules.capsys_serial_instrument_manager.mp730424.multimeter_mp730424 impor
 CURRENT_PATH = os.path.dirname(__file__)
 NAME_GUI = "esay_flow_RF90064"
 CONFIG_JSON_NAME = "config_antenne_patch_easy_flow_RF90064"
-PRODUCT_LIST_ID_DEFAULT = "5"
+PRODUCT_LIST_ID_DEFAULT = "4"
 VERSION = "V1.0.2"
 HASH_GIT = "DEBUG" # Will be replaced by the Git hash when compiled with command .\build.bat
 AUTHOR = "Thomas GERARDIN"
